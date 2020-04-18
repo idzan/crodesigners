@@ -2,3 +2,20 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background: #1e2019;
+  color: #fbfef9;
+}
+
+.logo {
+  width: 25vw;
+}
+
+.button {
+  background: #235789;
+}
+
+.joinus {
+  background: #ffab00;
+}
