@@ -5,18 +5,55 @@
 }
 
 body {
+    width: 100%;
     background: $black;
     color: $white;
+    display: grid;
+    grid-template-rows: 0.75fr auto 0.75fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "navigation"
+        "content"
+        "footer";
 }
 
-.logo {
-    width: 25vw;
+header {
+    grid-area: navigation;
 }
 
-.button {
-    background: $darkblue;
+main {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
 }
 
-.joinus {
-    background: $yellow;
+section {
+    grid-column: 2 / span 6;
+}
+
+#intro {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(4, 25vh);
+}
+
+#about {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 25vh);
+}
+
+#rooster {
+    display: grid;
+    grid-template-rows: repeat(3, 25vh);
+    grid-template-columns: repeat(4, 1fr);
+}
+
+#joinus {
+    display: grid;
+    grid-template-rows: repeat(4, 25vh);
+}
+
+footer {
+    grid-area: footer;
 }
